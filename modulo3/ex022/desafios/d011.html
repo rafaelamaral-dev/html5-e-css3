@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Astronauta</title>
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0; /* opcional, para remover espaçamento interno */
+        }
+
+        #container {
+            background-image: url(imagens/espaco.jpg);
+            background-size: cover;
+            position: relative; /* position relative é necessário para o position absolute funcionar. Position relative é padrão de qualquer elemento container.*/
+            height: 100vh;
+            background-position: fixed;
+            display: flex;
+            justify-content: center; /* centraliza horizontalmente */
+            align-items: center;     /* centraliza verticalmente */
+            min-height: 100vh;       /* ocupa toda a altura da tela */
+        }
+
+        #conteudo {
+            background-image: url(imagens/astronauta.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            max-width: 800px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
