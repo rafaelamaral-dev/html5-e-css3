@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -27,8 +28,18 @@
         }
 
         thead, tfoot {
-            background-color: rgba(22, 19, 19, 0.37);
+            background-color: black;
+            color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        } /* top: 0; pode ser usado, mas o -1px evita uma linha branca em alguns navegadores */
+
+        /* Este comando acima foi utilizado para fixar o cabeçalho, útil para tabelas com muitas linhas. */
+
         tbody > tr:nth-child(2n) {
             background-color: lightgrey;
         }
