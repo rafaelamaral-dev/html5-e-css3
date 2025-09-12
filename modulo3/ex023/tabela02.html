@@ -26,9 +26,14 @@
             background-color: lightgray;
         }
 
-        thead {
-            background-color: lightgray;
+        thead, tfoot {
+            background-color: rgba(22, 19, 19, 0.37);
         }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+        /* nth-child: podemos colocar 2n (2 em 2), odd (ímpares), even (par), 2n-1 etc */
 
         td.num {
             text-align: right;
