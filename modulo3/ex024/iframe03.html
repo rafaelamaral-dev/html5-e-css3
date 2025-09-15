@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias amet sit nostrum voluptate itaque modi rerum eos, consectetur iste, quisquam voluptatibus quae nemo molestiae tempora dolor qui et doloremque ut?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina01.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina02.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina03.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, animi, quisquam doloribus molestiae consequuntur laudantium voluptatibus eius beatae, vero tempora ipsa recusandae officia consectetur cum! Expedita esse sint aliquid ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dolore ea unde sequi, animi maxime enim facere optio, obcaecati magni adipisci, recusandae error tenetur harum libero magnam eaque quo nihil.</p>
+    <h1></h1>
+
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das Opções Acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit fugit ratione neque illum mollitia dolore placeat odio magni illo necessitatibus accusantium voluptatem et facilis deleniti, beatae ex fugiat expedita numquam.</p>"><p>Infelizmente seu navegador não é compatível com isso.</p></iframe> <!-- srcdoc é usado para definir um conteúdo padrão -->
+    <!-- recomendado é construir um arquivo diferente, pois colocar informações dentro do srcdoc é muito limitado.-->
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas a quisquam totam labore sunt tenetur obcaecati illum, doloribus porro mollitia voluptatum facilis quia possimus. Dicta quidem labore ullam nesciunt iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempore deserunt reprehenderit, explicabo harum, commodi velit vel repellat vero laborum voluptate magnam repellendus voluptatibus. Quaerat consequatur quisquam quia nostrum ea.</p>
+</body>
+</html>
