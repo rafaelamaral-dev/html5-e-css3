@@ -14,7 +14,7 @@
     gap: 5px;
 }
 
-caixa {
+.caixa {
     background-color: lightgray;
     border: 1px solid black;
 }
